@@ -5,6 +5,7 @@ from .models import Post
 
 
 class PostList(ListView):
+
     model = Post
     ordering = '-pk'
 
@@ -12,8 +13,6 @@ class PostList(ListView):
 
 class PostDetail(DetailView):
     model = Post
-
-
 
 
 # FBV로 만들기 (함수형)
