@@ -12,6 +12,9 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link rel="stylesheet" href="{%static 'blog/bootstrap/bootstrap.min.css'%}" media="screen">
         <link rel="stylesheet" href="{% static 'blog/css/styles.css' %}" media="screen" />
+
+        <!--Custom-->
+        <script src="https://kit.fontawesome.com/066e36721f.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <!-- Responsive navbar-->
@@ -39,6 +42,9 @@
                         <header class="mb-4">
                             <!-- Post title-->
                             <h1 class="fw-bolder mb-1">{{post.title}}</h1>
+
+                            <h5 class="text-muted">{{post.hook_text}}</h5>
+
                             <!-- Post meta content-->
                             <div class="text-muted fst-italic mb-2">{{post.created_at}}</div>
                             <!-- Post categories-->
@@ -64,7 +70,11 @@
                         <section class="mb-5">
                             <p class="fs-5 mb-4">{{post.content}}</p>
 
-
+                            {% if post.file_upload %}
+                                <a href="{{post.file_upload.url}}" class="btn btn-warning" role="button"download>
+                                    <i class="fa-solid fa-file"></i>
+                                    Download</a>
+                            {% endif %}
                         </section>
                     </article>
                     <!-- Comments section-->
