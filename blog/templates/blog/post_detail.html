@@ -24,10 +24,6 @@
                             <!-- Post meta content-->
                             <div class="text-muted fst-italic mb-2">by {{post.author | upper}}</div>
 
-
-                            <!-- Post categories-->
-                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Web Design</a>
-                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Freebies</a>
                         </header>
 
                         {% if user.is_authenticated and user == post.author %}
