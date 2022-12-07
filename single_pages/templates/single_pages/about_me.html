@@ -6,6 +6,17 @@
     <title>About 자바인력소</title>
     <link rel="stylesheet" href="{% static 'blog/bootstrap/bootstrap.min.css' %}" media="screen">
     <link rel="stylesheet" href="{% static 'single_pages/css/about_me.css' %}" media="screen">
+    <style>
+    @font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    body{
+    font-family: 'GmarketSansMedium'
+    }
+    </style>
     <script src="https://kit.fontawesome.com/066e36721f.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -17,15 +28,15 @@
                     <h1>안녕하세요. 자바인력소입니다.</h1>
                     <br/>
                     <p class="lead">
-                        가족같은 회사, 직원 총 5명, 희망연봉 면접 후 상의, 복지 좋은 회사
+                        가족같은 회사, 직원 총 5명, 희망연봉 면접 후 상의, <br>복지 좋은 회사
                         <br/> 평일 외 근무가능자, 꼼꼼하시고 책임감 강한분만 지원바랍니다.
                     </p>
                     <ul>
-                        <li>(주)High-Tech</li>
+                        <li>(주)Slave-Tech</li>
                         <ul>
                             <li>식비지원가능</li>
                             <li>신입 평균연봉 2400 (추후상의)</li>
-                            <li>아 모르겠다~~</li>
+                            <li>회사차 지원(연봉2100)</li>
                         </ul>
                         <li>recruitment</li>
                         <ul>
@@ -53,36 +64,36 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>PORTFOLIO</h1>
+                <h1>추천동영상</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-4">
                 <div class="card" data-toggle="modal" data-target="#pycon2017">
-                    <img class="card-img-top" src="{% static 'single_pages/imgs/hi.png' %}">
+                    <img class="card-img-top" src="{% static 'single_pages/imgs/im1.png' %}">
                     <div class="card-body">
-                        <h5 class="card-title">그만괴롭혀1</h5>
-                        <p>춘식이 동영상1</p>
+                         <h5 class="card-title">미용실 보냈더니 식빵이..</h5>
+                        <p>슈앤트리 SHU AND TREE</p>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4">
                 <div class="card" data-toggle="modal" data-target="#inflearn_django2">
-                    <img class="card-img-top" src="{% static 'single_pages/imgs/hi.png' %}">
+                    <img class="card-img-top" src="{% static 'single_pages/imgs/im2.png' %}">
                     <div class="card-body">
-                        <h5 class="card-title">그만괴롭혀2</h5>
-                        <p>춘식이 동영상1</p>
+                        <h5 class="card-title">먹고싶었던 연어에 행복사한 수달</h5>
+                        <p>KOTSUMET</p>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4">
                 <div class="card" data-toggle="modal" data-target="#automation_python">
-                    <img class="card-img-top" src="{% static 'single_pages/imgs/hi.png' %}">
+                    <img class="card-img-top" src="{% static 'single_pages/imgs/hst1.png' %}">
                     <div class="card-body">
-                        <h5 class="card-title">그만괴롭혀1</h5>
-                        <p>춘식이 동영상1</p>
+                        <h5 class="card-title">햄스터에게 파스타를 만들어줬...</h5>
+                        <p>SIMI TV</p>
                     </div>
                 </div>
             </div>
@@ -95,18 +106,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="pycon2017ModalLabel">그만괴롭혀1</h5>
+                <h5 class="modal-title" id="pycon2017ModalLabel">미용실 보냈더니 식빵이되어왔다..</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-lg-7">
-                        <img class="card-img-top" src="{% static 'single_pages/imgs/hi.png' %}">
-                    </div>
-                    <div class="col-lg-5">
-                        <p>날좀 꺼내줘</p>
+                    <div class="col-lg-12">
+<iframe width="750" height="415" src="https://www.youtube.com/embed/LSF1Em4hs9o" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -121,20 +130,18 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id=" inflearnDjangoModalLabel">그만좀괴롭혀</h5>
+                <h5 class="modal-title" id=" inflearnDjangoModalLabel">먹고싶었던 연어의 등장으로 행복사한 수달들!!</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-lg-7">
-                        <img class="card-img-top" src="{% static 'single_pages/imgs/hi.png' %}">
+                    <div class="col-lg-12">
+                        <iframe width="750" height="415" src="https://www.youtube.com/embed/citnw038UQ0" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <div class="col-lg-5">
-                        <p>날좀 해방시켜줘</p>
-                        <button type="button" class="btn btn-light"><i class="fas fa-chalkboard-teacher"></i> 인프런</button>
-                    </div>
+
                 </div>
             </div>
             <div class="modal-footer">
@@ -149,19 +156,16 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id=" automationPythonModalLabel">기도메타 잘하는법</h5>
+                <h5 class="modal-title" id=" automationPythonModalLabel">햄스터에게 파스타를 만들어줬다.</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-lg-7">
-                        <img class="card-img-top" src="{% static 'single_pages/imgs/hi.png' %}">
-                    </div>
-                    <div class="col-lg-5">
-                        <p>샤머니즘을 믿어야되나..</p>
-                        <button type="button" class="btn btn-light"><i class="fas fa-chalkboard-teacher"></i> 인프런</button>
+                    <div class="col-lg-12">
+                        <iframe width="750" height="415" src="https://www.youtube.com/embed/4Vm9nGXtp5g" title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -174,7 +178,6 @@
     <div class="fixed-bottom">
     {% include 'blog/footer.html' %}
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

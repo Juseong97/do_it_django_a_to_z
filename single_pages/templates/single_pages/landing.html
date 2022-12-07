@@ -7,18 +7,29 @@
     <link rel="stylesheet" href="{% static 'blog/bootstrap/bootstrap.min.css' %}" media="screen">
     <link rel="stylesheet" href="{% static 'single_pages/css/landing.css' %}" media="screen">
     <script src="https://kit.fontawesome.com/066e36721f.js" crossorigin="anonymous"></script>
+    <style>
+    @font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    body{
+    font-family: 'GmarketSansMedium'
+    }
+    </style>
 </head>
 <body>
     {% include 'blog/navbar.html' %}
     <section>
         <div class="container">
-            <div class="row jusify-content-between">
+            <div class="row jusify-content-between " style="margin:30px">
                 <div class="col-lg-6 text-light">
                     <h1 class="mt-5" style="color:#2F0C3E; font-weight:bold;">탄방동 물가</h1>
                     <p style="color:#2F0C3E; font-weight:bold;">탄방동의 물가가 너무 미쳐버렸다. 아니 무슨 짬뽕하나에 11000원이냐 칼국수도 8000원 이상이다 이건 소비자를 기만하는 행위다.</p>
                 </div>
                     <div class="col-lg-5 mt-5">
-                        <h2 class="text-light" style="font-weight:bold;">Blog - Recent posts</h2>
+                        <h2 style="font-weight:bold;">Blog - Recent posts</h2>
                         {% for post in recent_posts %}
                                 <div class="card mt-1">
                                     <div class="card-body">
