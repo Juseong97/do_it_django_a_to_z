@@ -11,25 +11,25 @@ class TestView(TestCase) :
         )
 
     def test_landing(self):
-        self.post_001 = Post.objects.create(
+        post_001 = Post.objects.create(
             title='첫 번째 포스트입니다.',
             content='첫 번째 포스트입니다.',
             author=self.user_trump
         )
 
-        self.post_002 = Post.objects.create(
+        post_002 = Post.objects.create(
             title='두 번째 포스트입니다.',
             content='두 번째 포스트입니다.',
             author=self.user_trump
         )
 
-        self.post_003 = Post.objects.create(
+        post_003 = Post.objects.create(
             title='세 번째 포스트입니다.',
             content='세 번째 포스트입니다.',
             author=self.user_trump
         )
 
-        self.post_004 = Post.objects.create(
+        post_004 = Post.objects.create(
             title='네 번째 포스트입니다.',
             content='네 번째 포스트입니다.',
             author=self.user_trump
@@ -40,7 +40,7 @@ class TestView(TestCase) :
         soup =BeautifulSoup(response.content,'html.parser')
 
         body=soup.body
-        self.assertNotIn(self.post_001.title, body.text)
-        self.assertIn(self.post_002.title, body.text)
-        self.assertIn(self.post_003.title, body.text)
-        self.assertIn(self.post_004.title, body.text)
+        self.assertNotIn(post_001.title, body.text)
+        self.assertIn(post_002.title, body.text)
+        self.assertIn(post_003.title, body.text)
+        self.assertIn(post_004.title, body.text)
